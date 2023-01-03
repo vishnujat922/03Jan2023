@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript looping statement using for loop</title>
+    <style></style>
+    <script>
+        // I can write js code before the clossing of head tag
+    </script>
+</head>
+
+<body>
+    <form>
+        <input class="name" type="text" placeholder="Enter Your Name">
+        <input class="ntime" type="number" placeholder="no of time greet">
+        <input type="button" value="submit" onclick="vishnu(this)" >
+    </form>
+    <ul class="greet"></ul>
+    <script>
+        // I can write js Code before the clossing of body tag
+        let greet = document.querySelector('ul.greet');
+
+        let name = document.querySelector('input.name');
+        let ntime = document.querySelector('input.ntime');
+
+        function vishnu(){
+            let ntimes = parseInt(ntime.value)
+            console.log(name.value);
+            console.log(ntime.value);
+            for (j = 0; j < ntimes; j++) {
+            greet.innerHTML += `<li>Hello ${name.value} , Goodmorning Have A Great Day</li>`;
+        }
+        }
+    </script>
+</body>
+
+</html>

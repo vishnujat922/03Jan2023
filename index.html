@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript looping statement</title>
+    <style></style>
+    <script>
+        // i can write js code before the clossing fo head tag
+    </script>
+</head>
+
+<body>
+    <ul class="greet">
+
+    </ul>
+
+    <script>
+        let greet = document.querySelector('ul.greet');
+        // i can write js code before the clossing of body tag 
+        //1. Name
+        //2. How Many Times We want to Greet
+        let name = prompt("Enter Your Name");
+        let ntimes = prompt("no. of times Greet Print");
+        ntimes = parseInt(ntimes); //type cating/type conversion
+        /*
+          Syntax
+          for (expression 1; expression 2; expression 3) {
+              // code block to be executed
+          }
+          for (initialization; Condition Checking; Incremnt/Decrement) {
+              // code block to be executed
+          }
+          */
+        for (i = 0; i < ntimes; i++) {
+            greet.innerHTML += `<li>Hello ${name} , Goodmorning Have A Great Day</li>`;
+        }
+
+
+    </script>
+</body>
+
+</html>
